@@ -44,6 +44,10 @@ wald = "flide_wald:Wald"
 xor = "flide_xor:Xor"
 autotrust = "flide_autotrust:AutoTrust"
 clef = "flide_clef:Clef"
+embeddinggemma_joint = "flide_embeddinggemma.format:EmbeddingGemmaJoint"
+
+[project.entry-points."flide.backbones"]
+embedding_gemma2 = "flide_embeddinggemma.backbone:EmbeddingGemma2"
 
 [tool.setuptools]
 package-dir = {"" = "plugins", "flide" = "flide"}
@@ -54,4 +58,4 @@ flide = ["api/playground/*.html", "kernels/prebuilt/cuda_utils/*/*", "kernels/pr
 
 [tool.setuptools.packages.find]
 where = [".", "plugins"]
-include = ["flide", "flide.*", "flide_onejev*", "flide_open_jev*"]
+include = ["flide", "flide.*", "flide_embeddinggemma*", "flide_onejev*", "flide_open_jev*"]

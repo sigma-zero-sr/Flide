@@ -1,0 +1,21 @@
+{
+  "activity": {
+    "type": "choice",
+    "instructions": "What is the main clearly visible activity in this residential security camera video? Choose other for unfamiliar or unclear activity.",
+    "criteria": {
+      "vehicle_passing_street": "A vehicle drives along the street without using the driveway.",
+      "vehicle_arriving_driveway": "A vehicle turns into or arrives at the driveway.",
+      "vehicle_leaving_driveway": "A vehicle drives out of the driveway onto the street.",
+      "person_near_vehicle": "A person approaches, enters, exits, or works around a vehicle on the property.",
+      "person_at_entrance": "A person walks or stands on the property, walkway, porch, or entrance.",
+      "person_side_yard": "A person walks or works in the side yard or narrow passage beside the building.",
+      "delivery_or_pickup": "A person delivers or picks up a package at the property.",
+      "person_passing": "A person passes along the public sidewalk or street without entering the property.",
+      "cyclist_passing": "A cyclist rides a bicycle along the public street or sidewalk.",
+      "animal": "A dog, cat, or another animal moves through the scene.",
+      "near_camera_obstruction": "A web, insect, rain, glare or other material very near the lens obscures the scene.",
+      "no_clear_activity": "No person, animal, or moving vehicle is clearly visible.",
+      "other": "Another activity occurs or the activity cannot be determined from the video."
+    }
+  }
+}
